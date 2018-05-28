@@ -1,0 +1,12 @@
+%{
+  "ace": {:hex, :ace, "0.16.4", "8e3fe95f4f5b32c094037610f648c059b2f9fafafe9a33662908ad5b6022f9ed", [:mix], [{:hpack, "~> 0.2.3", [hex: :hpack_erl, repo: "hexpm", optional: false]}, {:raxx, "~> 0.15.2", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
+  "cookie": {:hex, :cookie, "0.1.1", "89438362ee0f0ed400e9f076d617d630f82d682e3fbcf767072a46a6e1ed5781", [:mix], [], "hexpm"},
+  "exsync": {:hex, :exsync, "0.2.3", "a1ac11b4bd3808706003dbe587902101fcc1387d9fc55e8b10972f13a563dd15", [:mix], [{:file_system, "~> 0.2", [hex: :file_system, repo: "hexpm", optional: false]}], "hexpm"},
+  "file_system": {:hex, :file_system, "0.2.5", "a3060f063b116daf56c044c273f65202e36f75ec42e678dc10653056d3366054", [:mix], [], "hexpm"},
+  "hpack": {:hex, :hpack_erl, "0.2.3", "17670f83ff984ae6cd74b1c456edde906d27ff013740ee4d9efaa4f1bf999633", [:rebar3], [], "hexpm"},
+  "mime": {:hex, :mime, "1.2.0", "78adaa84832b3680de06f88f0997e3ead3b451a440d183d688085be2d709b534", [:mix], [], "hexpm"},
+  "phoenix_html": {:hex, :phoenix_html, "2.11.2", "86ebd768258ba60a27f5578bec83095bdb93485d646fc4111db8844c316602d6", [:mix], [{:plug, "~> 1.5", [hex: :plug, repo: "hexpm", optional: false]}], "hexpm"},
+  "plug": {:hex, :plug, "1.5.1", "1ff35bdecfb616f1a2b1c935ab5e4c47303f866cb929d2a76f0541e553a58165", [:mix], [{:cowboy, "~> 1.0.1 or ~> 1.1 or ~> 2.3", [hex: :cowboy, repo: "hexpm", optional: true]}, {:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}], "hexpm"},
+  "raxx": {:hex, :raxx, "0.15.4", "62e4a487e55e9469d1ba2d5de590672167f51eaac310f027f3f871018cb6a9fc", [:mix], [{:cookie, "~> 0.1.0", [hex: :cookie, repo: "hexpm", optional: false]}], "hexpm"},
+  "raxx_static": {:hex, :raxx_static, "0.6.1", "8b48254fc3d1b8b1e473b7c307fbba0ae767c60482754ce823c664544c85d729", [:mix], [{:mime, "~> 1.1", [hex: :mime, repo: "hexpm", optional: false]}, {:raxx, "~> 0.15.2", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
+}
