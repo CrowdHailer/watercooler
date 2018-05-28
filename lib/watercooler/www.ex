@@ -4,6 +4,7 @@ defmodule Watercooler.WWW do
   use Raxx.Router, [
     {%{method: :GET, path: []}, Watercooler.WWW.HomePage},
     {%{method: :POST, path: ["publish"]}, Watercooler.WWW.Publish},
+    {%{method: :GET, path: ["listen"]}, Watercooler.WWW.Listen},
     {_, Watercooler.WWW.NotFoundPage}
   ]
 

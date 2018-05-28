@@ -9,4 +9,5 @@
   "plug": {:hex, :plug, "1.5.1", "1ff35bdecfb616f1a2b1c935ab5e4c47303f866cb929d2a76f0541e553a58165", [:mix], [{:cowboy, "~> 1.0.1 or ~> 1.1 or ~> 2.3", [hex: :cowboy, repo: "hexpm", optional: true]}, {:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}], "hexpm"},
   "raxx": {:hex, :raxx, "0.15.4", "62e4a487e55e9469d1ba2d5de590672167f51eaac310f027f3f871018cb6a9fc", [:mix], [{:cookie, "~> 0.1.0", [hex: :cookie, repo: "hexpm", optional: false]}], "hexpm"},
   "raxx_static": {:hex, :raxx_static, "0.6.1", "8b48254fc3d1b8b1e473b7c307fbba0ae767c60482754ce823c664544c85d729", [:mix], [{:mime, "~> 1.1", [hex: :mime, repo: "hexpm", optional: false]}, {:raxx, "~> 0.15.2", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
+  "server_sent_event": {:hex, :server_sent_event, "0.3.1", "4126788362090bfd542be90f65571c2b0155c7e4032bf557a4f91a34a563acc1", [:mix], [], "hexpm"},
 }
