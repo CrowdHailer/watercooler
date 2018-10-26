@@ -4,7 +4,7 @@ defmodule Watercooler.Mixfile do
   def project do
     [app: :watercooler,
      version: "0.1.0",
-     elixir: "~> 1.6.4",
+     elixir: "~> 1.6",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -17,7 +17,7 @@ defmodule Watercooler.Mixfile do
 
   defp deps do
     [
-      {:ace, "~> 0.16.4"},
+      {:raxx, github: "crowdhailer/Ace", branch: "separate-interfaces"},
       {:phoenix_html, "~> 2.11"},
       {:raxx_static, "~> 0.6.1"},
       {:server_sent_event, "~> 0.3.1"},

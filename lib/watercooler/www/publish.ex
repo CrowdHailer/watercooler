@@ -1,7 +1,7 @@
 defmodule Watercooler.WWW.Publish do
-  use Raxx.Server
+  use Raxx.Server, type: :simple
 
-  @impl Raxx.Server
+  @impl Raxx.SimpleServer
   def handle_request(request, _state) do
     %{"message" => message} =
       request.body # 1.
