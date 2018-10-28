@@ -1,9 +1,9 @@
 defmodule Watercooler.WWW.Listen do
-  use Raxx.Server
+  use Raxx.Server, type: :streaming
   alias ServerSentEvent, as: SSE
 
   @impl Raxx.Server
-  def handle_request(_request, state) do
+  def handle_head(_request, state) do
     {:ok, _} = Watercooler.listen() # 1.
 
     response = response(:ok)

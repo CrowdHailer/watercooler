@@ -1,5 +1,6 @@
 defmodule Watercooler.WWW do
-  use Ace.HTTP.Service, [port: 8080, cleartext: true]
+  use Ace.HTTP.Service, port: 8080, cleartext: true
+  use Raxx.Server
 
   use Raxx.Router, [
     {%{method: :GET, path: []}, Watercooler.WWW.HomePage},

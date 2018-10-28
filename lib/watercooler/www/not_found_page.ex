@@ -1,8 +1,8 @@
 defmodule Watercooler.WWW.NotFoundPage do
-  use Raxx.Server
+  use Raxx.Server, type: :simple
   use Watercooler.WWW.HTMLView
 
-  @impl Raxx.Server
+  @impl Raxx.SimpleServer
   def handle_request(_request, _state) do
     response(:not_found)
     |> render(%{})
