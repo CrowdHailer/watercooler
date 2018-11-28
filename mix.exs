@@ -21,7 +21,7 @@ defmodule Watercooler.Mixfile do
       {:phoenix_html, "~> 2.11"},
       {:raxx_static, "~> 0.7.0"},
       {:server_sent_event, "~> 0.3.1"},
-      {:exsync, "~> 0.2.3"},
+      {:exsync, "~> 0.2.3", only: :dev},
     ]
   end
 end
