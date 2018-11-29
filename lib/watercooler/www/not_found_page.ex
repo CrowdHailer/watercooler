@@ -1,5 +1,5 @@
 defmodule Watercooler.WWW.NotFoundPage do
-  use Raxx.Server, type: :simple
+  use Raxx.SimpleServer
   use Watercooler.WWW.HTMLView
 
   @impl Raxx.SimpleServer
