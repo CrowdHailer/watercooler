@@ -1,10 +1,12 @@
 defmodule Watercooler.WWW.HomePage do
   use Raxx.SimpleServer
-  use Watercooler.WWW.HTMLView
+  use Raxx.View,
+  arguments: [:node],
+  layout: "_layout.html.eex"
 
   @impl Raxx.SimpleServer
   def handle_request(_request, _state) do
     response(:ok)
-    |> render(%{node: Node.self()})
+    |> render(Node.self())
   end
 end
