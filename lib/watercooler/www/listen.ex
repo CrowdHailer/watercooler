@@ -4,18 +4,23 @@ defmodule Watercooler.WWW.Listen do
 
   @impl Raxx.Server
   def handle_head(_request, state) do
-    {:ok, _} = Watercooler.listen() # 1.
+    # 1.
+    {:ok, _} = Watercooler.listen()
 
-    response = response(:ok)
-    |> set_header("content-type", SSE.mime_type())
-    |> set_body(true) # 2.
+    response =
+      response(:ok)
+      |> set_header("content-type", SSE.mime_type())
+      # 2.
+      |> set_body(true)
 
-    {[response], state} # 3.
+    # 3.
+    {[response], state}
   end
 
   @impl Raxx.Server
   def handle_info({:watercooler, message}, state) do
     event = SSE.serialize(message)
-    {[Raxx.data(event)], state} # 4.
+    # 4.
+    {[Raxx.data(event)], state}
   end
 end

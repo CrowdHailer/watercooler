@@ -4,15 +4,19 @@ defmodule Watercooler.Application do
   use Application
 
   def start(_type, _args) do
-
     config = %{}
     cleartext_options = [port: port(), cleartext: true]
-    secure_options = [port: secure_port(), cleartext: :false, certfile: certificate_path(), keyfile: certificate_key_path()]
+
+    secure_options = [
+      port: secure_port(),
+      cleartext: false,
+      certfile: certificate_path(),
+      keyfile: certificate_key_path()
+    ]
 
     children = [
       Supervisor.child_spec({Watercooler.WWW, [config, cleartext_options]}, id: :www_cleartext),
-      Supervisor.child_spec({Watercooler.WWW, [config, secure_options]}, id: :www_secure),
-      
+      Supervisor.child_spec({Watercooler.WWW, [config, secure_options]}, id: :www_secure)
     ]
 
     opts = [strategy: :one_for_one, name: Watercooler.Supervisor]
@@ -28,7 +32,8 @@ defmodule Watercooler.Application do
   end
 
   defp secure_port() do
-    with raw when is_binary(raw) <- System.get_env("SECURE_PORT"), {secure_port, ""} = Integer.parse(raw) do
+    with raw when is_binary(raw) <- System.get_env("SECURE_PORT"),
+         {secure_port, ""} = Integer.parse(raw) do
       secure_port
     else
       _ -> 8443

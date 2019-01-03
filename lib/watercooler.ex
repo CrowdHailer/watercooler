@@ -3,6 +3,7 @@ defmodule Watercooler do
 
   def publish(message) do
     :ok = :pg2.create(@group)
+
     for client <- :pg2.get_members(@group) do
       send(client, {@group, message})
     end

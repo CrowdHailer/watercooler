@@ -3,13 +3,16 @@ defmodule Watercooler.WWW.Publish do
 
   @impl Raxx.SimpleServer
   def handle_request(request, _state) do
+    # 1.
     %{"message" => message} =
-      request.body # 1.
+      request.body
       |> URI.decode_www_form()
       |> URI.decode_query()
 
-    {:ok, _} = Watercooler.publish(message) # 2.
+    # 2.
+    {:ok, _} = Watercooler.publish(message)
 
-    redirect("/") # 3.
+    # 3.
+    redirect("/")
   end
 end
