@@ -21,7 +21,8 @@ defmodule Watercooler.Mixfile do
       {:ace, "~> 0.18.0"},
       {:raxx_static, "~> 0.7.0"},
       {:server_sent_event, "~> 0.4.7"},
-      {:exsync, "~> 0.2.3", only: :dev}
+      {:exsync, "~> 0.2.3", only: :dev},
+      {:dialyxir, "~> 1.0.0-rc.4", only: [:dev], runtime: false}
     ]
   end
 end
