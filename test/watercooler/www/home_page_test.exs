@@ -10,6 +10,6 @@ defmodule Watercooler.WWW.HomePageTest do
 
     assert response.status == 200
     assert response.headers == [{"content-type", "text/html"}, {"content-length", "667"}]
-    assert String.contains?(response.body, "Watercooler")
+    assert String.contains?(:erlang.iolist_to_binary(response.body), "Watercooler")
   end
 end

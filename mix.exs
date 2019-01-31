@@ -18,7 +18,7 @@ defmodule Watercooler.Mixfile do
 
   defp deps do
     [
-      {:ace, "~> 0.18.0"},
+      {:ace, "~> 0.18.3"},
       {:raxx_static, "~> 0.7.0"},
       {:server_sent_event, "~> 0.4.7"},
       {:exsync, "~> 0.2.3", only: :dev},

@@ -1,5 +1,5 @@
 %{
-  "ace": {:hex, :ace, "0.18.1", "d94f49a452b79c866ba5b785e300a8e9f1723f0dc28c6aba4f158808d4663627", [:mix], [{:hpack, "~> 0.2.3", [hex: :hpack_erl, repo: "hexpm", optional: false]}, {:raxx, "~> 0.17.0", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
+  "ace": {:hex, :ace, "0.18.3", "d8a8c95bb9718788cba225c253955b03265d5546a1560466575efafc5fbc8159", [:mix], [{:hpack, "~> 0.2.3", [hex: :hpack_erl, repo: "hexpm", optional: false]}, {:raxx, "~> 0.17.0", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
   "cookie": {:hex, :cookie, "0.1.1", "89438362ee0f0ed400e9f076d617d630f82d682e3fbcf767072a46a6e1ed5781", [:mix], [], "hexpm"},
   "dialyxir": {:hex, :dialyxir, "1.0.0-rc.4", "71b42f5ee1b7628f3e3a6565f4617dfb02d127a0499ab3e72750455e986df001", [:mix], [{:erlex, "~> 0.1", [hex: :erlex, repo: "hexpm", optional: false]}], "hexpm"},
   "eex_html": {:hex, :eex_html, "0.2.0", "7f9da3e8ec2ecda2658a0443c65321e161c7c89897f2011e3d8a70f4f68341cb", [:mix], [{:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}], "hexpm"},
@@ -11,7 +11,7 @@
   "mime": {:hex, :mime, "1.3.1", "30ce04ab3175b6ad0bdce0035cba77bba68b813d523d1aac73d9781b4d193cf8", [:mix], [], "hexpm"},
   "phoenix_html": {:hex, :phoenix_html, "2.11.2", "86ebd768258ba60a27f5578bec83095bdb93485d646fc4111db8844c316602d6", [:mix], [{:plug, "~> 1.5", [hex: :plug, repo: "hexpm", optional: false]}], "hexpm"},
   "plug": {:hex, :plug, "1.5.1", "1ff35bdecfb616f1a2b1c935ab5e4c47303f866cb929d2a76f0541e553a58165", [:mix], [{:cowboy, "~> 1.0.1 or ~> 1.1 or ~> 2.3", [hex: :cowboy, repo: "hexpm", optional: true]}, {:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}], "hexpm"},
-  "raxx": {:hex, :raxx, "0.17.3", "ae426c5b431304d803ddd53aa35ad3319b29720b1222213aa8f199989d9bd065", [:mix], [{:cookie, "~> 0.1.0", [hex: :cookie, repo: "hexpm", optional: false]}, {:eex_html, "~> 0.1.1 or ~> 0.2.0", [hex: :eex_html, repo: "hexpm", optional: false]}], "hexpm"},
+  "raxx": {:hex, :raxx, "0.17.4", "c7dd1982590c02280120a84007b3d71ba2b7b3fc4366de306439093026d12c2b", [:mix], [{:cookie, "~> 0.1.0", [hex: :cookie, repo: "hexpm", optional: false]}, {:eex_html, "~> 0.1.1 or ~> 0.2.0", [hex: :eex_html, repo: "hexpm", optional: false]}], "hexpm"},
   "raxx_static": {:hex, :raxx_static, "0.7.0", "0ab6f0ce89ab2cc6a7bd6408607b15095509cf4eef6b0ad05fa5f49b0b4b0db1", [:mix], [{:mime, "~> 1.1", [hex: :mime, repo: "hexpm", optional: false]}, {:raxx, "~> 0.17.0", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
   "server_sent_event": {:hex, :server_sent_event, "0.4.7", "69ee6b9ad7a8087ecf083ff093bf834fdbd00d333187cef04b5adfffd4e8fa5e", [:mix], [{:raxx, "~> 0.16.0 or ~> 0.17.0", [hex: :raxx, repo: "hexpm", optional: false]}], "hexpm"},
 }
